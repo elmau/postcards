@@ -9,12 +9,9 @@
     <a-scene embedded arjs='trackingMethod: best; debugUIEnabled: false;' vr-mode-ui='enabled: false'>
         <a-marker-camera type='pattern' url='assets/pattern-palqui.patt'></a-marker-camera>
          <a-assets>
-            <a-asset-item id="iglesia-obj" src='assets/palqui.obj'></a-asset-item>
-            <a-asset-item id="iglesia-mtl" src='assets/palqui.mtl'></a-asset-item>
-             <img id="360" src="images/ts2Recurso1.png">
+            <-asset-item id="dpto" src="assets/Dpto1.gltf"></-asset-item>
   	</a-assets>
-        <a-entity obj-model="mtl: assets/palqui.mtl; obj: assets/palqui.obj" scale="0.15 0.15 0.15" position="-0.7 0 0"></a-entity>
-  	<a-image src="#360"></a-image>
+        <a-entity glft-model="#dpto" scale="0.15 0.15 0.15" position="-0.7 0 0"></a-entity>
     </a-scene>
       
   </body>
