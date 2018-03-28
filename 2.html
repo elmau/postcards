@@ -7,11 +7,12 @@
         <body style='margin : 0px; overflow: hidden;'>
     <a-scene embedded arjs='trackingMethod: best; debugUIEnabled: false;' vr-mode-ui='enabled: false'>
         <a-marker-camera preset='hiro'></a-marker-camera>
-        
-     
-     
+        <a-assets>
+      <a-asset-item id="caja-obj" src="/assets/testcube.obj"></a-asset-item>
+    <a-asset-item id="caja-mtl" src="/assets/testcube.mtl"></a-asset-item>
+     </a-assets>
 
-<a-entity obj-model="obj: url(assets/testcube.obj); mtl: url(assets/testcube.obj)"></a-entity>        
+<a-entity obj-model="obj: url(/assets/testcube.obj); mtl: url(/assets/testcube.obj)"></a-entity>        
     </a-scene>
             
     </body>
