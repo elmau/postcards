@@ -9,9 +9,11 @@
     <a-scene embedded arjs='trackingMethod: best; debugUIEnabled: false;' vr-mode-ui='enabled: false'>
         <a-marker-camera type='pattern' url='assets/pattern-palqui.patt'></a-marker-camera>
          <a-assets>
-            
-  	</a-assets>
-        <a-entity obj-model="obj: url(/assets/roclet.obj); mtl: url(/assets/roclet.mtl)"></a-entity>
+     <a-asset-item id="roclet-obj" src="/assets/roclet.obj"></a-asset-item>
+    <a-asset-item id="roclet-mtl" src="/assets/roclet.mtl"></a-asset-item>
+  </a-assets>
+
+  <a-entity obj-model="obj: #roclet-obj; mtl: #roclet-mtl"></a-entity>
     </a-scene>
       
   </body>
