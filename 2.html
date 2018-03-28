@@ -8,12 +8,15 @@
     <a-scene embedded arjs='trackingMethod: best; debugUIEnabled: false;' vr-mode-ui='enabled: false'>
         <a-marker-camera preset='hiro'></a-marker-camera>
         
-        <!-- create your content here. just a box for now -->
+     
      <a-assets>
-    <a-asset-item id="box" src="assets/testcube.gltf"></a-asset-item>
-  </a-assets>
+   
+         <a-asset-item id="box-obj" src="assets/testcube.obj"></a-asset-item>
+         <a-asset-item id="box-mat" src="assets/testcube.mat"></a-asset-item>
 
-  <a-entity gltf-model="url(assets/testcube.gltf)"></a-entity>
+    </a-assets>
+
+  <a-entity obj-model="obj: #box-obj; mtl: #box-mtl"></a-entity>
         
     </a-scene>
             
