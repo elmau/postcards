@@ -9,9 +9,10 @@
     <a-scene embedded arjs='trackingMethod: best; debugUIEnabled: false;' vr-mode-ui='enabled: false'>
         <a-marker-camera type='pattern' url='assets/pattern-palqui.patt'></a-marker-camera>
          <a-assets>
-            <-asset-item id="dpto" src="assets/Dpto1.gltf"></-asset-item>
+            <-asset-item id="dpto-obj" src="assets/Dpto1.obj"></-asset-item>
+            <-asset-item id="dpto-mtl" src="assets/Dpto1.mtl"></-asset-item>
   	</a-assets>
-        <a-entity glft-model="#dpto" scale="0.15 0.15 0.15" position="-0.7 0 0"></a-entity>
+        <a-entity obj-model="obj: #dpto; mtl: #dpto-mtl" scale="0.15 0.15 0.15" position="-0.7 0 0"></a-entity>
     </a-scene>
       
   </body>
